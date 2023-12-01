@@ -89,7 +89,7 @@ body {
 .about,
 .project,
 .contact {
-  padding: 14rem;
+  padding: 15rem;
 }
 
 .home {
@@ -156,61 +156,14 @@ body {
 }
 
 /* contact */
-.contact p {
-  text-align: center;
+.contact {
+  padding-top: 1rem;
 }
 
 .contact .row {
-  display: flex;
-  margin-top: 2rem;
-  background-color: #222;
-}
-
-.contact .row .map {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.contact .row form {
-  flex: 1 1 45rem;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.contact .row form .input-group {
-  display: flex;
   align-items: center;
-  margin-top: 2rem;
-  background-color: var(--bg);
-  border: 1px solid #eee;
-  padding-left: 2rem;
+  justify-content: center;
 }
-
-.contact .row form .input-group input {
-  width: 100%;
-  padding: 20px;
-  font-size: 1rem;
-  text-align: start;
-  background: none;
-  color: #fff;
-}
-
-.contact .row form .btn {
-  border-radius: 0.75rem;
-  margin-top: 3rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.7rem;
-  color: #ffffff;
-  background-color: var(--primary);
-  cursor: pointer;
-}
-
-.contact .row form .btn:hover {
-  background-color: var(--bg);
-}
-
 
 /* footer */
 footer {
@@ -259,21 +212,6 @@ footer .credit a:hover {
 @media (width < 1300px) {
   .projects {
     grid-template-columns: repeat(3, 1fr)
-  }
-
-  .contact .row {
-    align-items: center;
-    justify-content: center;
-    width: 30rem;
-    flex-wrap: wrap;
-  }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-
-  .contact .row form {
-    padding-top: 0;
   }
 }
 
@@ -328,13 +266,6 @@ footer .credit a:hover {
   
   .projects {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact .row {
-    align-items: center;
-    justify-content: center;
-    width: 30rem;
-    flex-wrap: wrap;
   }
   
 }
