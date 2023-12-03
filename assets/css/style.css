@@ -26,6 +26,7 @@ body {
 
 /* navbar */
 .navbar {
+  transition: 0.5s;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +41,7 @@ body {
 }
 
 .navbar .navbar-logo {
+  transition: 0.5s;
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
@@ -51,6 +53,7 @@ body {
 }
 
 .navbar .navbar-nav a {
+  transition: 0.5s;
   color: #fff;
   display: inline-block;
   font-size: 1.3rem;
@@ -89,15 +92,23 @@ body {
 .about,
 .project,
 .contact {
-  padding: 15rem;
+  height: 50rem;
+  padding: 10rem;
 }
 
 .home {
+  transition: 0.5s;
   background-color: var(--abu);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.home .image {
+  border: solid;
+  border-radius: 50%;
+  border-color: var(--bg);
 }
 
 .home img {
@@ -106,6 +117,13 @@ body {
 
 .home .info {
   margin-top: 20px;
+}
+
+.home .info p a {
+  color: black;
+}
+.home .info p a:hover {
+  color: white;
 }
 
 /* abbout me */
@@ -157,20 +175,61 @@ body {
 
 /* contact */
 .contact {
-  padding-top: 1rem;
+  display: grid;
+  background-color: #fff;
+  text-align: center;
 }
 
-.contact .row {
+.contact .row form .input-group {
+  color: #137a1b;
+}
+.contact .row form .input-group i{
+  position: relative;
+  top: 10px;
+  left: 10rem;
+  
+}
+
+
+.contact .row form input {
+  display: inline-block;
+  font-size: unset;
+  color: var(--bg);
   align-items: center;
   justify-content: center;
+  border: 5px solid;
+  border-color: var(--bg);
+  border-radius: 10px;
+  width: 25rem;
+  padding: 14px;
+  margin: 5px;
 }
+
+.contact .row form button {
+  background-color: var(--abu);
+  color: white;
+  border: 2.4px solid;
+  border-color: var(--bg);
+  border-radius: 13px;
+  margin: 10px;
+  width: 7rem;
+}
+.contact .row form button:hover {
+  background-color: var(--bg);
+}
+
+.contact .row form button h5 {
+  font-size: small;
+  margin: 7px;
+}
+
+
 
 /* footer */
 footer {
   background-color: var(--primary);
   text-align: center;
-  padding: 1rem 0;
-  margin-top: 3rem;
+  padding: 1rem 1rem;
 }
 
 footer .sosial {
@@ -197,6 +256,7 @@ footer .links a {
 }
 
 footer .credit {
+  color: #fff;
   font-size: 0.9rem;
 }
 
@@ -209,83 +269,108 @@ footer .credit a:hover {
 }
 
 /* resposifitas */
-@media (width < 1300px) {
+/* Gaya default untuk semua ukuran layar */
+
+/* Gaya untuk PC (lebar layar 901px ke atas) */
+@media only screen and (min-width: 901px) {
+  /* Sesuaikan gaya untuk layar yang lebih besar, misalnya, lebar PC */
   .projects {
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
+/* Gaya untuk tablet (lebar layar antara 601px dan 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .home,
+  .about,
+  .project,
+  .contact {
+    max-width: 100%;
+    height: 78rem;
+  }
 
-@media (width < 900px) {
-  .home img {
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .home h1 .home p {
-    display: grid;
-    text-align: center;
-  }
-  
-  .about, .project h2 {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .about p {
-    text-align: center;
-    width: 40rem;
-  }
-  
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (width < 800px) {
+/* Gaya untuk ponsel (lebar layar 600px ke bawah) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .about h2,
+  .project h2,
+  .contact h2 {
+    position: relative;
+    justify-content: center;
+    font-size: 25px;
+    padding: 8rem;
+  }
+
   .navbar {
-    display: grid;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  
-  
-  .about, .project h2 {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .about p {
-    text-align: center;
-    width: 20rem;
-  }
-  
-  
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-}
-
-@media (width < 758px) {
-.home{
-  display: grid;
-  text-align: center;
-}
-
-.projects {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .contact .row {
+    transition: 0.5s;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 30rem;
-    flex-wrap: wrap;
+  }
+  
+  .navbar .navbar-logo {
+    transition: 0.5s;
+    font-size: 25px;
+  }
+  
+  .navbar .navbar-nav a {
+    transition: 0.5s;
+    text-align: center;
+    font-size: 14px;
   }
 
+  .home {
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 100%; 
+    height: 55rem;
+  }
+  .home .info p a:hover {
+  color: var(--primary);
+}
+
+  .about {
+    height: 55rem;
+  }
+
+  .about,
+  .project,
+  .contact {
+    text-align: center;
+    padding: 14px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .project {
+    height: auto;
+  }
+
+  .projects {
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%; 
+    padding: 100px;
+  }
+.projects .cart  {
+  width: 17rem;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.contact {
+  background-color: var(--abu);
+}
+  
 }
