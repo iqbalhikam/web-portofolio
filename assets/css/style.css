@@ -140,6 +140,21 @@ body {
   margin-bottom: 3rem;
 }
 
+.about .awal {
+  color: white;
+  transition: 0.5s all;
+}
+.about .awal:hover {
+  color: var(--bg);
+}
+.about .akhir {
+  color: var(--bg);
+  transition: 0.5s all;
+}
+.about .akhir:hover {
+  color: white;
+}
+
 /* projects */
 .projects {
   align-items: center;
@@ -213,6 +228,7 @@ body {
   border-radius: 13px;
   margin: 10px;
   width: 7rem;
+  transition: .3s;
 }
 .contact .row form button:hover {
   background-color: var(--bg);
