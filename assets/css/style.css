@@ -99,19 +99,16 @@ body {
 .home {
   transition: 0.5s;
   background-color: var(--abu);
+  background: linear-gradient(0deg, rgba(19, 124, 28)0.1%, rgba(255,255,255,0) 30%);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.home .image {
-  border: solid;
-  border-radius: 50%;
-  border-color: var(--bg);
-}
-
 .home img {
+  border: 4px solid;
+  border-color: var(--bg);
   border-radius: 50%;
 }
 
@@ -128,6 +125,7 @@ body {
 
 /* abbout me */
 .about {
+  background: linear-gradient(0deg, rgba(255, 255, 255)0.1%, rgba(255,255,255,0) 30%);
   background-color: var(--primary);
   text-align: center;
 }
@@ -140,22 +138,12 @@ body {
   margin-bottom: 3rem;
 }
 
-.about .awal {
-  color: white;
-  transition: 0.5s all;
-}
-.about .awal:hover {
-  color: var(--bg);
-}
-.about .akhir {
-  color: var(--bg);
-  transition: 0.5s all;
-}
-.about .akhir:hover {
-  color: white;
+/* projects */
+.project {
+  background: linear-gradient(0deg, rgba(102, 102, 102)0.1%, rgba(255,255,255,0) 30%);
+  background-color: #ffff;
 }
 
-/* projects */
 .projects {
   align-items: center;
   justify-content: center;
@@ -191,7 +179,7 @@ body {
 /* contact */
 .contact {
   display: grid;
-  background-color: #fff;
+  background-color: var(--abu);
   text-align: center;
 }
 
@@ -321,7 +309,8 @@ footer .credit a:hover {
     position: relative;
     justify-content: center;
     font-size: 25px;
-    padding: 8rem;
+    padding: 1rem;
+    margin-top: 6rem;
   }
 
   .navbar {
@@ -356,18 +345,17 @@ footer .credit a:hover {
   color: var(--primary);
 }
 
-  .about {
-    height: 55rem;
-  }
-
-  .about,
-  .project,
-  .contact {
-    text-align: center;
-    padding: 14px;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
+.about,
+.project,
+.contact {
+  display: block;
+  text-align: center;
+  align-items: center;
+  padding: 14px;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 55rem;
+}
 
   .project {
     height: auto;
@@ -377,7 +365,7 @@ footer .credit a:hover {
     justify-content: center;
     grid-template-columns: repeat(1, 1fr);
     max-width: 100%; 
-    padding: 100px;
+    margin-bottom: 10rem;
   }
 .projects .cart  {
   width: 17rem;
@@ -386,7 +374,34 @@ footer .credit a:hover {
 }
 
 .contact {
+  
   background-color: var(--abu);
 }
-  
+  .contact .row form .input-group input {
+    width: 16rem;
+  }
+}
+
+/* Gaya untuk ponsel (lebar layar 555px ke bawah) */
+@media only screen and (max-width: 380px) {
+  .navbar .navbar-nav {
+    display: flex;
+  }
+  .navbar .navbar-nav a {
+    transition: 0.5s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+  }
+
+  .about h2,
+  .project h2,
+  .contact h2 {
+    position: relative;
+    justify-content: center;
+    font-size: 20px;
+    padding: 1rem;
+    margin-top: 10rem;
+  }
 }
