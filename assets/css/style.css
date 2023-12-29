@@ -142,6 +142,8 @@ body {
 .project {
   background: linear-gradient(0deg, rgba(102, 102, 102)0.1%, rgba(255,255,255,0) 30%);
   background-color: #ffff;
+  height: auto;
+  padding: 10rem;
 }
 
 .projects {
