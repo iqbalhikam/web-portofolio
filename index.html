@@ -75,7 +75,7 @@
             <h2>Sertifikat</h2>
             <div class="projects">
               <!-- sertifikat 1 -->
-              <div class="cart">
+              <div class="cart" onclick="openCertificateModal('Sertifikat Front End', 'assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg', 'Deskripsi singkat mengenai Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
                 <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg" alt="Project 1" />
                 <h3>Sertifikat Front End</h3>
                 <p>Deskripsi singkat mengenai Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -83,7 +83,7 @@
               </div>
               
               <!-- sertifikat 2 -->
-              <div class="cart">
+              <div class="cart" onclick="openCertificateModal('Sertifikat Front End', 'assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg', 'Deskripsi singkat mengenai Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
                 <img src="assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg" alt="Project 2" />
                 <h3>Sertifikat Cyber</h3>
                 <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -119,11 +119,18 @@
                 <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" class="project-link">Learn More</a>
               </div>
+              <div class="cart">
+                <img src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0001.jpg" alt="Project 2" />
+                <h3>Sertifikat visual data</h3>
+                <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="project-link">Learn More</a>
+              </div>
             </div>
           </div>
+          
         </article>
         <!-- Sertifikat End -->
-  
+        
         <!-- Contact Start -->
         <article id="contact" class="container">
           <div class="contact">
@@ -166,16 +173,38 @@
         <a href="#sertifikat">Sertifikat</a>
         <a href="#contact">Kontak</a>
       </div>
-
+      
       <div class="credit">
         <p>Creatied by <a href="https://www.instagram.com/iqbal.hikm/">Iqbal.hikm</a>. | &copy; 2023.</p>
       </div>
     </footer>
     <!-- Footer End -->
+    
+    <!-- detail modal start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd2.jpg" alt="forntend">
+          <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd2.jpg" alt="forntend">
+          <div class="sertif-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, qui sunt illum ab nulla reiciendis distinctio commodi! Deleniti, tempore placeat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- detail modal end -->
+
+    <!-- Kontainer Modal -->
+
+
+    <!-- detail modal start -->
 
     <!-- Script Feather Icon -->
     <script>
       feather.replace();
     </script>
+    <script src="js/index.js"></script>
   </body>
-</html>
+  </html>
+  
