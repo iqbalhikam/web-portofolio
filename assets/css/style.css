@@ -148,6 +148,7 @@ body {
 }
 
 .projects {
+  
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
@@ -282,7 +283,7 @@ footer .credit a:hover {
 /* modal box */
 /* detail sertif */
 .modal {
-  display: flex;
+  display: none;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -311,8 +312,7 @@ footer .credit a:hover {
 }
 
 .modal-content {
-   display: flexbox;
-  /*flex-wrap: nowrap; */
+   display:inline
 }
 
 .modal-content img {
@@ -333,7 +333,7 @@ footer .credit a:hover {
 @media only screen and (min-width: 901px) {
   /* Sesuaikan gaya untuk layar yang lebih besar, misalnya, lebar PC */
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -345,6 +345,9 @@ footer .credit a:hover {
   .contact {
     max-width: 100%;
     height: 78rem;
+  }
+  .project{
+    height: auto;
   }
 
   .projects {
