@@ -110,7 +110,7 @@ body {
 
 .home img {
   border: 4px solid;
-  border-color: var(--bg);
+  border-color: var(--dark);
   border-radius: 50%;
 }
 
@@ -169,6 +169,7 @@ body {
   border: 2px solid transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
+  cursor: url('assets/image/cursor/cursor.png'), auto;
 }
 
 .projects .cart:hover {
@@ -233,6 +234,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 .detail-content img {
@@ -240,7 +242,7 @@ body {
   max-width: 500px;
   margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 15px 5px var(--dark);
 }
 
 .info {
@@ -248,7 +250,7 @@ body {
 }
 
 .info h2 {
-  margin: 10px 0;
+  margin: 1px ;
   font-size: 24px;
   color: #333;
 }
@@ -524,6 +526,10 @@ footer .credit a:hover {
     font-size: 20px;
     padding: 1rem;
     margin-top: 10rem;
+  }
+
+  .detail-content {
+    padding: 0;
   }
 
     .info h2 {
