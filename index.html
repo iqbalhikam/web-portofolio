@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio.IqbalHikam</title>
+    <title>Web-Portofolio | IqbalHikam</title>
 
     <!-- my css -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -75,56 +75,167 @@
             <h2>Sertifikat</h2>
             <div class="projects">
               <!-- sertifikat 1 -->
-              <div class="cart" onclick="openCertificateModal('Sertifikat Front End', 'assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg', 'Deskripsi singkat mengenai Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
-                <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg" alt="Project 1" />
-                <h3>Sertifikat Front End</h3>
-                <p>Deskripsi singkat mengenai Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="project-link">Learn More</a>
+                 <div class="cart" onclick="openCertificateModal1()">
+                   <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg" alt="Project 1" />
+                   <h3>Sertifikat Front End</h3>
+                 </div>
+
+              <!-- detail sertifikat1 -->
+              <div id="detailSertifikat1" class="detail" onclick="closeCertificateDetail1()">
+                <div class="detail-container">
+                  <span class="close-icon" onclick="closeCertificateDetail1()">&times;</span>
+                  <div class="detail-content">
+                    <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg" alt="Sertifikat Front End" />
+                    <div class="info">
+                      <h2>Sertifikat Front End</h2>
+                      <p>Kelas ini ditujukan untuk seorang Front-End Web Developer yang ingin mengembangkan website yang memiliki fungsionalitas lebih daripada hanya media
+informasi saja, sesuai dengan standar industri. Di akhir kelas, siswa dapat membuat aplikasi front-end web yang interaktif serta memiliki fitur penyimpanan
+menggunakan web storage.</p>
+                      <h4>Diterbitkan oleh: Dicoding Indonesia</h4>
+                      <h5>Tanggal: 14 Desember 2023</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
-              
+              <!-- detail sertifikat1 -->
+
               <!-- sertifikat 2 -->
-              <div class="cart" onclick="openCertificateModal('Sertifikat Front End', 'assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg', 'Deskripsi singkat mengenai Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.')">
+              <div class="cart" onclick="openCertificateModal2()">
                 <img src="assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg" alt="Project 2" />
                 <h3>Sertifikat Cyber</h3>
-                <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="project-link">Learn More</a>
               </div>
+
+              <!-- detail sertifikat2 -->
+              <div id="detailSertifikat2" class="detail" onclick="closeCertificateDetail2()">
+                <div class="detail-container" >
+                  <span class="close-icon" onclick="closeCertificateDetail2()">&times;</span>
+                  <div class="detail-content">
+                    <img src="assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg" alt="Sertifikat Front End" />
+                    <div class="info">
+                      <h2>Sertifikat Front End</h2>
+                      <p>Detail sertifikat mengenai Front End Development, termasuk teknik HTML, CSS, dan JavaScript.</p>
+                      <p>Diterbitkan oleh: Copeny, Inc.</p>
+                      <p>Tanggal: 01 Oktober 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- detail sertifikat2 -->
   
               <!-- sertifikat 3 -->
-              <div class="cart">
+              <div class="cart" onclick="openCertificateModal3()">
                 <img src="assets/image/sertifikat/sertifikat eCommerce/sertifikat.jpg" alt="Project 2" />
                 <h3>Sertifikat eCommerce</h3>
-                <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="project-link">Learn More</a>
               </div>
+              <!-- detail sertifikat3 -->
+              <div id="detailSertifikat3" class="detail" onclick="closeCertificateDetail3()">
+                <div class="detail-container" >
+                  <span class="close-icon" onclick="closeCertificateDetail3()">&times;</span>
+                  <div class="detail-content">
+                    <img src="assets/image/sertifikat/sertifikat eCommerce/sertifikat.jpg" alt="Sertifikat Front End" />
+                    <div class="info">
+                      <h2>Sertifikat Front End</h2>
+                      <p>Detail sertifikat mengenai Front End Development, termasuk teknik HTML, CSS, dan JavaScript.</p>
+                      <p>Diterbitkan oleh: Copeny, Inc.</p>
+                      <p>Tanggal: 01 Oktober 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- detail sertifikat3 -->
               
               <!-- sertifikat 4 -->
-              <div class="cart">
+              <div class="cart" onclick="openCertificateModal4()">
                 <img src="assets/image/sertifikat/sertifikatInagurasi/SERTIFIKAT inagurasi.png" alt="Project 2" />
                 <h3>Sertifikat Inagurasi</h3>
-                <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="project-link">Learn More</a>
               </div>
+
+              <!-- detail sertifikat4 -->
+              <div id="detailSertifikat4" class="detail" onclick="closeCertificateDetail4()">
+                <div class="detail-container" >
+                  <span class="close-icon" onclick="closeCertificateDetail4()">&times;</span>
+                  <div class="detail-content">
+                    <img src="assets/image/sertifikat/sertifikatInagurasi/SERTIFIKAT inagurasi.png" alt="Sertifikat Front End" />
+                    <div class="info">
+                      <h2>Sertifikat Front End</h2>
+                      <p>Detail sertifikat mengenai Front End Development, termasuk teknik HTML, CSS, dan JavaScript.</p>
+                      <p>Diterbitkan oleh: Copeny, Inc.</p>
+                      <p>Tanggal: 01 Oktober 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- detail sertifikat4 -->
+
               <!-- sertifikat 5 -->
-              <div class="cart">
+              <div class="cart" onclick="openCertificateModal5()">
                 <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer1.jpg" alt="Project 2" />
                 <h3>Sertifikat Web</h3>
-                <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="project-link">Learn More</a>
               </div>
+
+              <!-- detail sertifikat5 -->
+              <div id="detailSertifikat5" class="detail" onclick="closeCertificateDetail5()">
+                <div class="detail-container" >
+                  <span class="close-icon" onclick="closeCertificateDetail5()">&times;</span>
+                  <div class="detail-content">
+                    <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer1.jpg" alt="Sertifikat Front End" />
+                    <div class="info">
+                      <h2>Sertifikat Front End</h2>
+                      <p>Detail sertifikat mengenai Front End Development, termasuk teknik HTML, CSS, dan JavaScript.</p>
+                      <p>Diterbitkan oleh: Copeny, Inc.</p>
+                      <p>Tanggal: 01 Oktober 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- detail sertifikat5 -->
+
               <!-- sertifikat 6 -->
-              <div class="cart">
+              <div class="cart" onclick="openCertificateModal6()">
                 <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python1.jpg" alt="Project 2" />
                 <h3>Sertifikat Python</h3>
-                <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="project-link">Learn More</a>
               </div>
-              <div class="cart">
+
+              <!-- detail sertifikat6 -->
+              <div id="detailSertifikat6" class="detail" onclick="closeCertificateDetail6()">
+                <div class="detail-container" >
+                  <span class="close-icon" onclick="closeCertificateDetail6()">&times;</span>
+                  <div class="detail-content">
+                    <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python1.jpg" alt="Sertifikat Front End" />
+                    <div class="info">
+                      <h2>Sertifikat Front End</h2>
+                      <p>Detail sertifikat mengenai Front End Development, termasuk teknik HTML, CSS, dan JavaScript.</p>
+                      <p>Diterbitkan oleh: Copeny, Inc.</p>
+                      <p>Tanggal: 01 Oktober 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- detail sertifikat6 -->
+              
+              <!-- sertifikat 7 -->
+              <div class="cart" onclick="openCertificateModal7()">
                 <img src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0001.jpg" alt="Project 2" />
                 <h3>Sertifikat visual data</h3>
-                <p>Deskripsi singkat mengenai Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="project-link">Learn More</a>
               </div>
+              <!-- sertifikat 7 -->
+
+              <!-- detail sertifikat 7 -->
+              <div id="detailSertifikat7" class="detail" onclick="closeCertificateDetail7()">
+                <div class="detail-container" >
+                  <span class="close-icon" onclick="closeCertificateDetail6()">&times;</span>
+                  <div class="detail-content">
+                    <img src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0001.jpg" alt="Sertifikat Front End" />
+                    <div class="info">
+                      <h2>Sertifikat Front End</h2>
+                      <p>Detail sertifikat mengenai Front End Development, termasuk teknik HTML, CSS, dan JavaScript.</p>
+                      <p>Diterbitkan oleh: Copeny, Inc.</p>
+                      <p>Tanggal: 01 Oktober 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- detail sertifikat 7 -->
             </div>
           </div>
           
