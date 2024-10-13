@@ -1,3 +1,4 @@
+// function open hiden detail sertifikat
 function toggleCertificateModal(modalId, action) {
   const modalElement = document.getElementById(modalId);
 
@@ -8,7 +9,7 @@ function toggleCertificateModal(modalId, action) {
   }
 }
 
-
+// function detail sertifikat
 function openCertificateModal1() {
   toggleCertificateModal('detailSertifikat1', 'open');
 }
@@ -64,4 +65,12 @@ function openCertificateModal7() {
 
 function closeCertificateDetail7() {
   toggleCertificateModal('detailSertifikat7', 'close');
+}
+
+// duplikat pendidikan
+const pendidikan = document.querySelector('.pendidikan').cloneNode(true);
+document.querySelector('.pendidikan-container').appendChild(pendidikan);
+
+function twiter(){
+  alert("tidak punya twiter")
 }

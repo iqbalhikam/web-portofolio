@@ -1,7 +1,5 @@
 :root {
-  /* --primary: #137a1b;
-  --bg: #010101;
-  --abu: #656565; */
+ 
     --primary: #76ABAE;
   --bg: #EEEEEE;
   --abu: #31363F;
@@ -26,6 +24,15 @@ body {
   background-color: var(--abu);
   color: var(--bg);
 }
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+
+
 
 .navbar {
   transition: 0.5s;
@@ -79,12 +86,7 @@ body {
   transform: scaleX(0.5);
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 .container {
   background-color: var(--bg);
@@ -92,15 +94,17 @@ body {
 
 .home,
 .about,
-.project,
+.jadwal,
+.pendidikans,
+.sertifikat,
 .contact {
   height: 50rem;
-  padding: 10rem;
+  padding-top: 10rem;
 }
 
 .home {
   transition: 0.5s;
-  background-color: var(--abu);
+  background-color: var(--bg);
   background: linear-gradient(0deg, var(--primary) 0.1%, rgba(255, 255, 255, 0) 30%);
   display: flex;
   align-items: center;
@@ -128,28 +132,154 @@ body {
 
 .about {
   color: var(--dark);
-  background: linear-gradient(0deg, rgba(255, 255, 255) 0.1%, rgba(255, 255, 255, 0) 30%);
+  background: linear-gradient(0deg, var(--bg) 0.1%, rgba(255, 255, 255, 0) 30%);
   background-color: var(--primary);
   text-align: center;
+  padding: 10rem;
 }
 
 .about h2,
-.project h2,
+.jadwal h2,
+.pendidikans h1,
+.sertifikat h2,
 .contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  color: #000;
 }
 
-.project {
+
+
+.jadwal{
+  display: flex;
+  padding: 10rem;
+  flex-direction: column;
+  background-color: var(--bg);
+  background: linear-gradient(0deg, var(--primary) 0.1%, rgba(255, 255, 255, 0) 30%);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: Arial, sans-serif;
+  border: 1px solid #080808;
+  border-radius: 10px;
+}
+
+.schedule-table thead {
+  background-color: #00000065;
+  color: white;
+}
+
+.schedule-table th, .schedule-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+.schedule-table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.schedule-table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.schedule-table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.schedule-table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.schedule-table tr {
+  background-color: #ffffff51;
+  color: #000;
+}
+
+.schedule-table tr:hover {
+  background-color:var(--primary);
+}
+
+.schedule-table th, .schedule-table td {
+  text-align: center;
+}
+
+
+
+.pendidikans{
+    display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, var(--bg) 0.1%, rgba(255, 255, 255, 0) 30%);
+  background-color: var(--primary);
+}
+
+.pendidikan-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.pendidikan {
+    display: flex;
+    flex-shrink: 0;
+    gap: 3rem;
+    padding: 10px;
+    animation: infinite-scroll 15s linear infinite;
+   
+    height: 10rem;
+  }
+  
+  .education {
+  width: 20rem;
+    min-width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.education h2 {
+    color: var(--dark);
+    margin-bottom: 5px;
+    font-size: x-large;
+}
+
+.education p {
+    color: var(--abu);
+    margin: 1px 0;
+}
+
+.education p strong {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+@keyframes infinite-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.sertifikat {
   color: var(--dark);
-  background: linear-gradient(0deg, var(--abu) 0.1%, rgba(255, 255, 255, 0) 30%);
-  background-color: #ffff;
+  background: linear-gradient(0deg, var(--dark) 0.1%, rgba(255, 255, 255, 0) 30%);
+  background-color: var(--bg);
   height: auto;
   padding: 10rem;
 }
 
-.projects {
+.sertifikats {
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
@@ -158,12 +288,12 @@ body {
   gap: 2rem;
 }
 
-.project .cart {
+.sertifikat .cart {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--dark);
+  background-color: #0000007c;
   color: var(--bg);
   padding:20px;
   border: 2px solid transparent;
@@ -172,21 +302,21 @@ body {
   cursor: url('assets/image/cursor/cursor.png'), auto;
 }
 
-.projects .cart:hover {
-  background-color: var(--abu);
+.sertifikats .cart:hover {
+  background-color: var(--dark);
   color: var(--primary);
   border-color: #ffff;
   box-shadow: 0px 0px 50px var(--primary);
 }
 
-.projects .cart img {
+.sertifikats .cart img {
   width: 15rem;
   margin: auto;
   border-radius: 10px;
   padding: 5px;
 }
 
-.projects .cart h3{
+.sertifikats .cart h3{
   padding: 10px;
 }
 
@@ -209,10 +339,10 @@ body {
   padding: 20px;
   background-color: #fff;
   width: 80%;
-  /* height: 80%; */
   max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
   border-radius: 10px;
-  
   box-shadow: 0 0 80px var(--primary);
 }
 
@@ -242,78 +372,26 @@ body {
   max-width: 500px;
   margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 4px 4px 15px 5px var(--dark);
+  box-shadow: 5px 5px 15px 5px var(--dark);
 }
-
-.info {
+.info{
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-
 .info h2 {
-  margin: 1px ;
+  margin-top: 10px; 
+  margin-bottom: 5px;
   font-size: 24px;
   color: #333;
 }
 
 .info p {
+  margin: 5px 0;
   font-size: 16px;
   color: #666;
-  margin: 5px 0;
 }
 
-.modal-content {
-  position: absolute;
-}
-
-.contact {
-  display: grid;
-  background: linear-gradient(0deg, var(--dark) 0.1%, rgba(255, 255, 255, 0) 30%);
-
-  background-color: var(--abu);
-  text-align: center;
-}
-
-.contact .row form .input-group {
-  color: #137a1b;
-}
-.contact .row form .input-group i {
-  position: relative;
-  top: 10px;
-  left: 10rem;
-}
-
-.contact .row form input {
-  display: inline-block;
-  font-size: unset;
-  color: var(--bg);
-  align-items: center;
-  justify-content: center;
-  border: 5px solid;
-  border-color: var(--bg);
-  border-radius: 10px;
-  width: 25rem;
-  padding: 14px;
-  margin: 5px;
-}
-
-.contact .row form button {
-  background-color: var(--abu);
-  color: white;
-  border: 2.4px solid;
-  border-color: var(--bg);
-  border-radius: 13px;
-  margin: 10px;
-  width: 7rem;
-  transition: 0.3s;
-}
-.contact .row form button:hover {
-  background-color: var(--bg);
-}
-
-.contact .row form button h5 {
-  font-size: small;
-  margin: 7px;
-}
 
 footer {
   background-color: var(--dark);
@@ -397,35 +475,59 @@ footer .credit a:hover {
   border-radius: 10px;
 }
 
-@media only screen and (min-width: 901px) { /* Desktop / Large Screen */
-  .projects {
+/* desktop */
+@media only screen and (min-width: 901px) {
+  .sertifikats {
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 5rem;
   }
+
 }
 
-@media only screen and (min-width: 601px) and (max-width: 900px) { /* Tablet */
+
+/* tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
   .home,
   .about,
-  .project,
+  .sertifikat,
   .contact {
     max-width: 100%;
     height: 78rem;
   }
-  .project {
+
+  .sertifikat {
     height: auto;
   }
 
-  .projects {
+  .sertifikats {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3rem;
+  }
+
+  .info h2 {
+    font-size: 20px;
+    margin-top: 1.5rem;
+  }
+
+  .info p {
+    font-size: 14px;
+    margin-top: 0.75rem;
+  }
+
+  .detail-content img {
+    margin-bottom: 0.75rem;
   }
 }
 
-@media only screen and (max-width: 600px) { /* Mobile / Smartphone */
+
+/* hp */
+@media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
   }
+
   .about h2,
-  .project h2,
+  .sertifikat h2,
   .contact h2 {
     position: relative;
     justify-content: center;
@@ -450,6 +552,7 @@ footer .credit a:hover {
     transition: 0.5s;
     text-align: center;
     font-size: 14px;
+    margin: 0 10px;
   }
 
   .home {
@@ -462,12 +565,13 @@ footer .credit a:hover {
     max-width: 100%;
     height: 55rem;
   }
+
   .home .info p a:hover {
     color: var(--primary);
   }
 
   .about,
-  .project,
+  .sertifikat,
   .contact {
     display: block;
     text-align: center;
@@ -478,38 +582,75 @@ footer .credit a:hover {
     height: 55rem;
   }
 
-  .project {
+ 
+  .jadwal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .schedule-table th, .schedule-table td {
+    padding: 7px;
+  }
+
+  .schedule-table tr {
+    background-color: #ffffff40;
+    color: #000;
+  }
+
+  .schedule-table tr:hover {
+    background-color: var(--primary);
+  }
+
+  .schedule-table th, .schedule-table td {
+    text-align: center;
+  }
+
+ 
+  .sertifikat {
     height: auto;
   }
 
-  .projects {
+  .sertifikats {
     justify-content: center;
     grid-template-columns: repeat(1, 1fr);
     max-width: 100%;
     margin-bottom: 10rem;
   }
-  .projects .cart {
+
+  .sertifikats .cart {
     width: 17rem;
     margin: auto;
     border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  .info{
+    padding-bottom: 20px;
+  }
+  .info h2 {
+    font-size: 18px;
+    margin-top: 1rem;
+  }
+
+  .info p {
+    font-size: 12px;
+    margin-top: 0.5rem;
+  }
+
+  .detail-content img {
+    margin-bottom: 0.5rem;
   }
 
   .close-icon {
-  display: none;
-}
-
-  .contact {
-    background-color: var(--abu);
-  }
-  .contact .row form .input-group input {
-    width: 16rem;
+    display: none;
   }
 }
 
-@media only screen and (max-width: 380px) { /* Small Mobile / Small Screen */
+@media only screen and (max-width: 380px) {
   .navbar .navbar-nav {
     display: flex;
   }
+
   .navbar .navbar-nav a {
     transition: 0.5s;
     text-align: center;
@@ -519,20 +660,39 @@ footer .credit a:hover {
   }
 
   .about h2,
-  .project h2,
+  .jadwal h2,
+  .sertifikat h2,
   .contact h2 {
     position: relative;
     justify-content: center;
-    font-size: 20px;
-    padding: 1rem;
+    font-size: 40px;
+    padding-top: 1rem;
     margin-top: 10rem;
+  }
+
+  .about{
+    padding: 20px;
+  }
+
+  .jadwal{
+    padding-top: 10px;
+    height: auto;
+  }
+
+  .pendidikans h1{
+    font-size: 40px;
+  }
+
+  .sertifikats .cart img {
+    width: 14rem;
   }
 
   .detail-content {
     padding: 0;
+    max-height: 30rem;
   }
 
-    .info h2 {
+  .info h2 {
     font-size: 18px;
   }
 

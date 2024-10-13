@@ -1,307 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web-Portofolio | IqbalHikam</title>
 
-    <!-- my css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web-Portofolio | IqbalHikam</title>
 
-    <!-- Link Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!-- my css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Header Start -->
-    <header>
-      <nav class="navbar">
-        <a href="#" class="navbar-logo">Iqbal<span>.Hikm</span></a>
-        <div class="navbar-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About Me</a>
-          <a href="#sertifikat">sertifikat</a>
-          <a href="#contact">Kontak</a>
-        </div>
-      </nav>
-    </header>
-    <!-- Header End -->
+  <!-- Link Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- Main Start -->
-    <main>
-      <!-- Content Start -->
-      <div id="content">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,300;1,700&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <!-- Home Start -->
-        <article id="home" class="container">
-          <div class="home">
-            <div class="image">
-              <img src="assets/image/iqball.jpg" alt="Iqbal Hikam" width="200" />
-            </div>
-            <div class="info">
-              <h1>M Iqbal Fatkhul Hikam</h1>
-              <p><a href="https://www.instagram.com/binainsaniuniversity/">Mahasiswa Universitas Bina Insani</a></p>
-            </div>
-          </div>
-        </article>
-        <!-- Home End -->
-
-        <!-- About Me Start -->
-        <article id="about" class="container">
-          <div class="about">
-            <h2>About Me</h2>
-              <p>
-                Saya M Iqbal Fatkhul Hikam, seorang mahasiswa yang penuh semangat dan kreatif. Saya memiliki ketertarikan yang mendalam dalam pemogramman, yang memotivasi saya untuk terus belajar dan berkembang. Dengan latar belakang
-                pendidikan di Universitas Bina Insani. Saya percaya bahwa pengembangan diri adalah kunci untuk mencapai tujuan, dan saya selalu mencari peluang untuk mengasah keterampilan dan pengetahuan saya.
-              </p>
-              <p>
-                Saya percaya bahwa setiap hari adalah kesempatan untuk belajar sesuatu yang baru dan menciptakan momen berharga. Dalam hidup saya, saya berusaha untuk menjadi pribadi yang tekun. Saya berharap dapat berkontribusi secara
-                positif pada dunia sekitar saya dan terus berkembang sebagai individu.
-              </p>
-          </div>
-        </article>
-        <!-- About Me End -->
-      
-        <!-- Pendidikan Start -->
-         <div class="pendidikan" id="pendidikan">
-          
-         </div>
-        <!-- Pendidikan End -->
-
-      <!-- Aside Start -->
-      <aside class="Aprofile">
-        
-        <!-- Sertifikat Start -->
-        <article id="sertifikat" class="container">
-          <div class="project">
-            <h2>Sertifikat</h2>
-            <div class="projects">
-              <!-- sertifikat 1 -->
-                 <div class="cart" onclick="openCertificateModal1()">
-                   <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg" alt="Project 1" />
-                   <h3>Sertifikat Front End</h3>
-                 </div>
-
-              <!-- detail sertifikat1 -->
-              <div id="detailSertifikat1" class="detail" onclick="closeCertificateDetail1()">
-                <div class="detail-container">
-                  <span class="close-icon" onclick="closeCertificateDetail1()">&times;</span>
-                  <div class="detail-content">
-                    <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg" alt="Sertifikat Front End" />
-                    <div class="info">
-                      <h2>Sertifikat Front End</h2>
-                      <p>Kelas ini ditujukan untuk seorang Front-End Web Developer yang ingin mengembangkan website yang memiliki fungsionalitas lebih daripada hanya media
-informasi saja, sesuai dengan standar industri. Di akhir kelas, siswa dapat membuat aplikasi front-end web yang interaktif serta memiliki fitur penyimpanan
-menggunakan web storage.</p>
-                      <h4>Diterbitkan oleh: Dicoding Indonesia</h4>
-                      <h5>Tanggal: 14 Desember 2023</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- detail sertifikat1 -->
-
-              <!-- sertifikat 2 -->
-              <div class="cart" onclick="openCertificateModal2()">
-                <img src="assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg" alt="Project 2" />
-                <h3>Sertifikat Cyber</h3>
-              </div>
-
-              <!-- detail sertifikat2 -->
-              <div id="detailSertifikat2" class="detail" onclick="closeCertificateDetail2()">
-                <div class="detail-container" >
-                  <span class="close-icon" onclick="closeCertificateDetail2()">&times;</span>
-                  <div class="detail-content">
-                    <img src="assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg" alt="Sertifikat Cyber" />
-                    <div class="info">
-                      <h2>Sertifikat Cyber</h2>
-                      <p>isi keterangan Detail sertifikat</p>
-                      <h4>Diterbitkan oleh: Copeny, Inc.</h4>
-                      <h5>Tanggal: 01 Oktober 2024</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- detail sertifikat2 -->
-  
-              <!-- sertifikat 3 -->
-              <div class="cart" onclick="openCertificateModal3()">
-                <img src="assets/image/sertifikat/Certified Developer form alibbaba cloud/Certified Developer.png" alt="Certified Developer" />
-                <h3>Certified Developer</h3>
-              </div>
-              <!-- detail sertifikat3 -->
-              <div id="detailSertifikat3" class="detail" onclick="closeCertificateDetail3()">
-                <div class="detail-container" >
-                  <span class="close-icon" onclick="closeCertificateDetail3()">&times;</span>
-                  <div class="detail-content">
-                    <img src="assets/image/sertifikat/Certified Developer form alibbaba cloud/Certified Developer.png" alt="Certified Developer" />
-                    <div class="info">
-                      <h2>Certified Developer</h2>
-                      <p>Sertifikat ini menandakan bahwa pemegang telah berhasil mengembangkan aplikasi menggunakan layanan Alibaba Cloud dan diakui sebagai Certified Developer. Sertifikat ini menunjukkan keahlian dalam menggunakan layanan cloud untuk pengembangan aplikasi.</p>
-                      <h4>Diterbitkan oleh: Alibaba Cloud for Students</h4>
-                      <h5>Tanggal: 11 Juli 2024</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- detail sertifikat3 -->
-              
-              <!-- sertifikat 4 -->
-              <div class="cart" onclick="openCertificateModal4()">
-                <img src="assets/image/sertifikat/sertifikatInagurasi/SERTIFIKAT inagurasi.png" alt="Project 2" />
-                <h3>Sertifikat Inagurasi</h3>
-              </div>
-
-              <!-- detail sertifikat4 -->
-              <div id="detailSertifikat4" class="detail" onclick="closeCertificateDetail4()">
-                <div class="detail-container" >
-                  <span class="close-icon" onclick="closeCertificateDetail4()">&times;</span>
-                  <div class="detail-content">
-                    <img src="assets/image/sertifikat/sertifikatInagurasi/SERTIFIKAT inagurasi.png" alt="Sertifikat Inagurasi" />
-                    <div class="info">
-                      <h2>Sertifikat Inagurasi</h2>
-                      <p>isi keterangan Detail sertifikat</p>
-                      <h4>Diterbitkan oleh: Copeny, Inc.</h4>
-                      <h5>Tanggal: 01 Oktober 2024</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- detail sertifikat4 -->
-
-              <!-- sertifikat 5 -->
-              <div class="cart" onclick="openCertificateModal5()">
-                <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer1.jpg" alt="Project 2" />
-                <h3>Sertifikat Web</h3>
-              </div>
-
-              <!-- detail sertifikat5 -->
-              <div id="detailSertifikat5" class="detail" onclick="closeCertificateDetail5()">
-                <div class="detail-container" >
-                  <span class="close-icon" onclick="closeCertificateDetail5()">&times;</span>
-                  <div class="detail-content">
-                    <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer1.jpg" alt="Sertifikat Web" />
-                    <div class="info">
-                      <h2>Sertifikat Web</h2>
-                      <p>isi keterangan Detail sertifikat</p>
-                      <h4>Diterbitkan oleh: Copeny, Inc.</h4>
-                      <h5>Tanggal: 01 Oktober 2024</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- detail sertifikat5 -->
-
-              <!-- sertifikat 6 -->
-              <div class="cart" onclick="openCertificateModal6()">
-                <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python1.jpg" alt="Project 2" />
-                <h3>Sertifikat Python</h3>
-              </div>
-
-              <!-- detail sertifikat6 -->
-              <div id="detailSertifikat6" class="detail" onclick="closeCertificateDetail6()">
-                <div class="detail-container" >
-                  <span class="close-icon" onclick="closeCertificateDetail6()">&times;</span>
-                  <div class="detail-content">
-                    <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python1.jpg" alt="Sertifikat Python" />
-                    <div class="info">
-                      <h2>Sertifikat Python</h2>
-                      <p>isi keterangan Detail sertifikat</p>
-                      <h4>Diterbitkan oleh: Copeny, Inc.</h4>
-                      <h5>Tanggal: 01 Oktober 2024</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- detail sertifikat6 -->
-              
-              <!-- sertifikat 7 -->
-              <div class="cart" onclick="openCertificateModal7()">
-                <img src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0001.jpg" alt="Project 2" />
-                <h3>Sertifikat visual data</h3>
-              </div>
-              <!-- sertifikat 7 -->
-
-              <!-- detail sertifikat 7 -->
-              <div id="detailSertifikat7" class="detail" onclick="closeCertificateDetail7()">
-                <div class="detail-container" >
-                  <span class="close-icon" onclick="closeCertificateDetail6()">&times;</span>
-                  <div class="detail-content">
-                    <img src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0001.jpg" alt="Sertifikat visual data" />
-                    <div class="info">
-                      <h2>Sertifikat visual data</h2>
-                      <p>isi keterangan Detail sertifikat</p>
-                      <h4>Diterbitkan oleh: Copeny, Inc.</h4>
-                      <h5>Tanggal: 01 Oktober 2024</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- detail sertifikat 7 -->
-            </div>
-          </div>
-          
-        </article>
-        <!-- Sertifikat End -->
-        
-        <!-- Contact Start -->
-        <article id="contact" class="container">
-          <div class="contact">
-            <h2>Kontak</h2>
-            <div class="row">
-              <form action="">
-                <div class="input-group">
-                  <i data-feather="user"></i>
-                  <input type="text" placeholder="Nama" />
-                </div>
-                <div class="input-group">
-                  <i data-feather="mail"></i>
-                  <input type="email" placeholder="Email" />
-                </div>
-                <div class="input-group">
-                  <i data-feather="phone"></i>
-                  <input type="text" placeholder="No Hp" />
-                </div>
-                <button type="submit" class="btn"><h5>Kirim Pesan</h5></button>
-              </form>
-            </div>
-          </div>
-        </article>
-        <!-- Contact End -->
-      </aside>
-      <!-- Aside End -->
-    </main>
-    
-    <!-- Footer Start -->
-    <footer>
-      <div class="sosial">
-        <a href="https://www.instagram.com/iqbal.hikm/"><i data-feather="instagram"></i></a>
-        <a href=""><i data-feather="twitter"></i></a>
-        <a href="https://www.linkedin.com/in/m-iqbal-fatkhul-hikam-89a474255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i data-feather="linkedin"></i></a>
-        <!-- Main End -->
-      </div>
-      <div class="links">
+<body>
+  <!-- Header Start -->
+  <header>
+    <nav class="navbar">
+      <a href="https://github.com/iqbalhikam" class="navbar-logo" target="_blank">Iqbal<span>.Hikm</span></a>
+      <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
-        <a href="#sertifikat">Sertifikat</a>
-        <a href="#contact">Kontak</a>
+        <a href="#jadwal">Jadwal</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#sertifikat">sertifikat</a>
       </div>
-      
-      <div class="credit">
-        <p>Creatied by <a href="https://www.instagram.com/iqbal.hikm/">Iqbal.hikm</a>. | &copy; 2023.</p>
-      </div>
-    </footer>
-    <!-- Footer End -->
+    </nav>
+  </header>
+  <!-- Header End -->
 
-    <!-- Script Feather Icon -->
-    <script>
-      feather.replace();
-    </script>
-    <script src="js/index.js"></script>
-  </body>
-  </html>
-  
+  <!-- Main Start -->
+  <main>
+    <!-- Content Start -->
+    <div id="content">
+
+      <!-- Home Start -->
+      <article id="home" class="container">
+        <div class="home">
+          <div class="image">
+            <img src="assets/image/iqball2.jpg" alt="Iqbal Hikam" width="200" />
+          </div>
+          <div class="info">
+            <h1>M Iqbal Fatkhul Hikam</h1>
+            <p><a href="https://www.instagram.com/binainsaniuniversity/">Mahasiswa Universitas Bina Insani</a></p>
+          </div>
+        </div>
+      </article>
+      <!-- Home End -->
+
+      <!-- About Me Start -->
+      <article id="about" class="container">
+        <div class="about">
+          <h2>About Me</h2>
+          <p>
+            Saya M Iqbal Fatkhul Hikam, seorang mahasiswa yang penuh semangat dan kreatif. Saya memiliki ketertarikan
+            yang mendalam dalam pemogramman, yang memotivasi saya untuk terus belajar dan berkembang. Dengan latar
+            belakang
+            pendidikan di Universitas Bina Insani. Saya percaya bahwa pengembangan diri adalah kunci untuk mencapai
+            tujuan, dan saya selalu mencari peluang untuk mengasah keterampilan dan pengetahuan saya.
+          </p>
+          <p>
+            Saya percaya bahwa setiap hari adalah kesempatan untuk belajar sesuatu yang baru dan menciptakan momen
+            berharga. Dalam hidup saya, saya berusaha untuk menjadi pribadi yang tekun. Saya berharap dapat
+            berkontribusi secara
+            positif pada dunia sekitar saya dan terus berkembang sebagai individu.
+          </p>
+        </div>
+      </article>
+      <!-- About Me End -->
+
+      <!-- jadwal Start -->
+      <article id="jadwal" class="container">
+        <div class="jadwal">
+          <h2>Jadwal</h2>
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Hari</th>
+                <th>Jam</th>
+                <th>Mata Kuliah</th>
+                <th>Dosen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <a href="#home">
+                  <td>Senin</td>
+                  <td>20:00 - 22:00</td>
+                  <td>PERANCANGAN BASIS DATA</td>
+                  <td>Jafar Shadiq, M.Kom</td>
+                </a>
+              </tr>
+              <tr>
+                <td>Rabu</td>
+                <td>18:00 - 19:40</td>
+                <td>BAHASA INGGRIS</td>
+                <td>Jajang Setiawan, S.S. M.Pd</td>
+              </tr>
+              <tr>
+                <td>Rabu</td>
+                <td>20:00 - 22:00</td>
+                <td>INTERAKSI MANUSIA KOMPUTER</td>
+                <td>Dr. Rahmat Budiarto, M. Eng</td>
+              </tr>
+              <tr>
+                <td>Kamis</td>
+                <td>18:00 - 20:00</td>
+                <td>SISTEM OPERASI LANJUT</td>
+                <td>Harjunadi Wicaksono, S.T., M.Kom</td>
+              </tr>
+              <tr>
+                <td>Kamis</td>
+                <td>20:00 - 22:00</td>
+                <td>PEMROGRAMAN WEB DASAR</td>
+                <td>Harjunadi Wicaksono, S.T., M.Kom</td>
+              </tr>
+              <tr>
+                <td>Jum'at</td>
+                <td>18:00 - 20:00</td>
+                <td>ARSITEKTUR & ORGANISASI KOMPUTER</td>
+                <td>Bambang Kriswantara, M.Kom</td>
+              </tr>
+              <td>Jum'at</td>
+              <td>20:00 - 22:00</td>
+              <td>REKAYASA PERANGKAT LUNAK</td>
+              <td>Bambang Kriswantara, M.Kom</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <!-- jadwal End -->
+
+      <!-- Pendidikan Start -->
+      <article id="pendidikan" class="container">
+        <div class="pendidikans">
+          <h1>Pendidikan</h1>
+          <div class="pendidikan-container">
+            <div class="pendidikan">
+              <div class="education">
+                <h2>MII Islamiyah</h2>
+                <p><strong>MII Sumberharjo, Sumberrejo, BOJONEGORO, JATIM</strong></p>
+                <p>Tahun Kelulusan: 2016</p>
+              </div>
+              <div class="education">
+                <h2>MTs ATTANWIR</h2>
+                <p><strong>MTs ATTANWIR Talun, Sumberrejo, BOJONEGORO, JATIM</strong></p>
+                <p>Tahun Kelulusan: 2019</p>
+              </div>
+              <div class="education">
+                <h2>SMK Taruna</h2>
+                <p><strong>SMK Taruna, Balen, BOJONEGORO, JATIM</strong></p>
+                <p>Jurusan Teknik Sepedah Motor</p>
+                <p>Tahun Kelulusan: 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Pendidikan End -->
+
+      <!-- Sertifikat Start -->
+      <article id="sertifikat" class="container">
+        <div class="sertifikat">
+          <h2>Sertifikat</h2>
+          <div class="sertifikats">
+            <!-- sertifikat 1 -->
+            <div class="cart" onclick="openCertificateModal1()">
+              <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg" alt="Project 1" />
+              <h3>Front End</h3>
+            </div>
+
+            <!-- detail sertifikat1 -->
+            <div id="detailSertifikat1" class="detail" onclick="closeCertificateDetail1()">
+              <div class="detail-container">
+                <span class="close-icon" onclick="closeCertificateDetail1()">&times;</span>
+                <div class="detail-content">
+                  <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd1.jpg"
+                    alt="Sertifikat Front End" />
+                  <img src="assets/image/sertifikat/sertifikatFrontEnd/sertifikat_frontEnd2.jpg"
+                    alt="Sertifikat Front End" />
+                  <div class="info">
+                    <h2>Sertifikat Front End</h2>
+                    <p>Kelas ini ditujukan untuk seorang Front-End Web Developer yang ingin mengembangkan website yang
+                      memiliki fungsionalitas lebih daripada hanya media
+                      informasi saja, sesuai dengan standar industri. Di akhir kelas, siswa dapat membuat aplikasi
+                      front-end web yang interaktif serta memiliki fitur penyimpanan
+                      menggunakan web storage.</p>
+                    <h4>Diterbitkan oleh: Dicoding Indonesia</h4>
+                    <h5>Tanggal: 14 Desember 2023</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- detail sertifikat1 -->
+
+            <!-- sertifikat 2 -->
+            <div class="cart" onclick="openCertificateModal2()">
+              <img src="assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg" alt="Project 2" />
+              <h3>Inovasi Digital</h3>
+            </div>
+
+            <!-- detail sertifikat2 -->
+            <div id="detailSertifikat2" class="detail" onclick="closeCertificateDetail2()">
+              <div class="detail-container">
+                <span class="close-icon" onclick="closeCertificateDetail2()">&times;</span>
+                <div class="detail-content">
+                  <img src="assets/image/sertifikat/sertifikatCyber/sertifikatCyber.jpg" alt="Sertifikat Cyber" />
+                  <div class="info">
+                    <h2>Sertifikat Inovasi Digital</h2>
+                    <p>Sertifikat ini di berikan kepada mahasiswa yang telah mengikuti kelas umum Cyber security yang di
+                      adakan oleh kampus Universitas Bina Insani</p>
+                    <h4>Diterbitkan oleh: Copeny, Inc.</h4>
+                    <h5>Tanggal: 01 Oktober 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- detail sertifikat2 -->
+
+            <!-- sertifikat 3 -->
+            <div class="cart" onclick="openCertificateModal3()">
+              <img src="assets/image/sertifikat/Certified Developer form alibbaba cloud/Certified Developer.png"
+                alt="Certified Developer" />
+              <h3>Certified Developer</h3>
+            </div>
+            <!-- detail sertifikat3 -->
+            <div id="detailSertifikat3" class="detail" onclick="closeCertificateDetail3()">
+              <div class="detail-container">
+                <span class="close-icon" onclick="closeCertificateDetail3()">&times;</span>
+                <div class="detail-content">
+                  <img src="assets/image/sertifikat/Certified Developer form alibbaba cloud/Certified Developer.png"
+                    alt="Certified Developer" />
+                  <div class="info">
+                    <h2>Certified Developer</h2>
+                    <p>Sertifikat ini menandakan bahwa pemegang telah berhasil mengembangkan aplikasi menggunakan
+                      layanan Alibaba Cloud dan diakui sebagai Certified Developer. Sertifikat ini menunjukkan keahlian
+                      dalam menggunakan layanan cloud untuk pengembangan aplikasi.</p>
+                    <h4>Diterbitkan oleh: Alibaba Cloud for Students</h4>
+                    <h5>Tanggal: 11 Juli 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- detail sertifikat3 -->
+
+            <!-- sertifikat 4 -->
+
+            <!-- sertifikat 5 -->
+            <div class="cart" onclick="openCertificateModal4()">
+              <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer1.jpg" alt="Project 2" />
+              <h3>Pemrogramman Web</h3>
+            </div>
+
+            <!-- detail sertifikat5 -->
+            <div id="detailSertifikat4" class="detail" onclick="closeCertificateDetail4()">
+              <div class="detail-container">
+                <span class="close-icon" onclick="closeCertificateDetail4()">&times;</span>
+                <div class="detail-content">
+                  <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer1.jpg" alt="Sertifikat Web" />
+                  <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer2.jpg" alt="Sertifikat Web" />
+                  <img src="assets/image/sertifikat/sertifikatWeb/sertifikat_webProgrammer3.jpg" alt="Sertifikat Web" />
+                  <div class="info">
+                    <h2>Sertifikat Web</h2>
+                    <p>Sertifikat ini diberikan sebagai bukti partisipasi dan kelulusan dalam kelas yang membahas dasar-dasar HTML dan CSS,
+                    yang merupakan fondasi utama dalam pembuatan dan pengembangan website. Kursus ini disusun oleh expert dari Dicoding dan
+                    divalidasi oleh Google Developers</p>
+                    <h4>Diterbitkan oleh: Copeny, Inc.</h4>
+                    <h5>Tanggal: 01 Oktober 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- detail sertifikat5 -->
+
+            <!-- sertifikat 6 -->
+            <div class="cart" onclick="openCertificateModal5()">
+              <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python1.jpg" alt="Project 2" />
+              <h3>Python</h3>
+            </div>
+
+            <!-- detail sertifikat6 -->
+            <div id="detailSertifikat5" class="detail" onclick="closeCertificateDetail5()">
+              <div class="detail-container">
+                <span class="close-icon" onclick="closeCertificateDetail5()">&times;</span>
+                <div class="detail-content">
+                  <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python1.jpg" alt="Sertifikat Python" />
+                  <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python2.jpg" alt="Sertifikat Python" />
+                  <img src="assets/image/sertifikat/sertifikatPython/sertifikat_python3.jpg" alt="Sertifikat Python" />
+                  <div class="info">
+                    <h2>Sertifikat Python</h2>
+                    <p>Sertifikat ini diberikan sebagai bukti partisipasi dan kelulusan dalam kelas pengenalan dasar pemrograman Python yang
+                    mengacu pada standar industri. Kursus ini disusun oleh Dicoding dan divalidasi oleh Google Developers, serta bertujuan
+                    untuk memberikan pemahaman mendalam kepada peserta tentang penggunaan bahasa pemrograman Python dalam berbagai skenario
+                    pengembangan perangkat lunak.</p>
+                    <h4>Diterbitkan oleh: Copeny, Inc.</h4>
+                    <h5>Tanggal: 01 Oktober 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- detail sertifikat6 -->
+
+            <!-- sertifikat 7 -->
+            <div class="cart" onclick="openCertificateModal6()">
+              <img src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0001.jpg"
+                alt="Project 2" />
+              <h3>visual data</h3>
+            </div>
+            <!-- sertifikat 6 -->
+
+            <!-- detail sertifikat 6 -->
+            <div id="detailSertifikat6" class="detail" onclick="closeCertificateDetail6()">
+              <div class="detail-container">
+                <span class="close-icon" onclick="closeCertificateDetail6()">&times;</span>
+                <div class="detail-content">
+                  <img
+                    src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0001.jpg"
+                    alt="Sertifikat visual data" />
+                  <img
+                    src="assets/image/sertifikat/sertifikatData/sertifikat_course_177_3564668_311223190649_page-0002.jpg"
+                    alt="Sertifikat visual data" />
+                  <div class="info">
+                    <h2>Sertifikat visual data</h2>
+                    <p>Sertifikat ini diberikan kepada peserta yang telah menyelesaikan kursus mengenai Visualisasi Data menggunakan Google
+                    Sheets sesuai dengan standar kompetensi industri. Kursus ini diselenggarakan oleh Dicoding, bekerja sama dengan Google
+                    Developers, dan ditujukan bagi mereka yang ingin memulai karier di bidang pengolahan data serta meningkatkan
+                    keterampilan visualisasi data yang efektif untuk keperluan industri dan pengembangan perangkat lunak.</p>
+                    <h4>Diterbitkan oleh: Copeny, Inc.</h4>
+                    <h5>Tanggal: 01 Oktober 2024</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- detail sertifikat 7 -->
+          </div>
+        </div>
+
+      </article>
+      <!-- Sertifikat End -->
+  </main>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="sosial">
+      <a href="https://www.instagram.com/iqbal.hikm/" target="_blank" ><i data-feather="instagram"></i></a>
+      <a href="" onclick="twiter()"><i data-feather="twitter"></i></a>
+      <a
+        href="https://www.linkedin.com/in/m-iqbal-fatkhul-hikam-89a474255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" ><i
+          data-feather="linkedin"></i></a>
+      <!-- Main End -->
+    </div>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#jadwal">Jadwal</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#sertifikat">Sertifikat</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p>Creatied by <a href="https://www.instagram.com/iqbal.hikm/" target="_blank" >Iqbal.hikm</a>. | &copy; 2023.</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Script Feather Icon -->
+  <script>
+    feather.replace();
+  </script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
